@@ -180,41 +180,6 @@
         <div class="message">Năm mới này, mong cậu sẽ luôn khỏe mạnh và gặp nhiều may mắn. Tui thích cậu nhiều lắm nha!</div>
         <div class="message">Chúc cậu và gia đình có một năm mới thật hạnh phúc và tràn đầy yêu thương! 💕</div>
     </div>
-    
-    <script src="./script.js"></script>
-    
-    </script>
-        <script>
-        function typeText(elementId, text, interval, callback) {
-            let index = 0;
-            const element = document.getElementById(elementId);
-            element.style.visibility = 'visible'; 
-            element.innerHTML = ''; 
-
-            const intervalId = setInterval(function() {
-                element.innerHTML += text[index];
-                index++;
-                if (index === text.length) {
-                    clearInterval(intervalId);
-                    if (callback) callback();
-                }
-            }, interval); 
-        }
-
-        function showText() {
-            setTimeout(function() {
-                typeText('line1', 'Tui biết bạn sẽ đồng ý mà', 70, function() {
-                    setTimeout(function() {
-                        typeText('line2', 'Nhắn qua tui nhé', 70)
-                    }, 500); 
-                });
-            }, 1000);
-        }
-
-        window.onload = function() {
-            showText();
-        };
-    </script>
 
 </body>
 
